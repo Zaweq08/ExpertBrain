@@ -1,6 +1,9 @@
-var code = String(Math.floor(Math.random()*9999));
+do {
+	var code = String(Math.floor(Math.random()*9999));
+} while ((code[0] == code[1] || code[0] == code[2] || code[0] == code[3] || code[1] == code[2] || code[1] == code[3] || code[2] == code[3]) || (typeof(code[1]) == "undefined" || typeof(code[2]) == "undefined" || typeof(code[3]) == "undefined"));
+//console.log("Le code final est : " + code);
+
 var tour = 0;
-//console.log(code);
 
 function intitulerPng(p, c, e) {
 	p = String(p);
@@ -51,7 +54,13 @@ function tester() {
 }
 
 function button() {
-	alert("rien a faire");
+	alert("...................................");
+}
+
+function affRgl(/*jeu*/) {
+	//if (jeu == "eb") {
+		alert("Les règles sont proches du MasterMind mais les couleurs sont remplacées par des chiffres: (1, 2, 3, 4, 5, 6, 7, 8, 9 et 0), il y a bien 4 'emplacements' et les couleurs signifient: 1Vert => 1chiffre est bien placé, 1Jaune => 1chiffre est existant mais pas à la bonne place(sans compter les biens placés), 1Rouge => 1chiffre n'existant pas dans le code.");
+	//}
 }
 
 
