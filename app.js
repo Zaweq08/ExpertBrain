@@ -4,6 +4,7 @@ do {
 //console.log("Le code final est : " + code);
 
 var tour = 0;
+var gagne = 0;
 
 function intitulerPng(p, c, e) {
 	p = String(p);
@@ -41,14 +42,21 @@ function tester() {
 		//alert(places + " bien placé(s).");
 		//alert(couleurs + " chiffre(s) existant(s). {Hors bien placés.}");
 		//alert(erreurs + " erreurs.");
-		if (tour > 10) {
+		if (tour > 10 && gagne == 0) {
 			alert("Perdu...");
 		} else if (places == 4) {
 			alert("Gagné!!! Bravo!!");
+			gagne = 1;
 		}
 	} else {
-		if (confirm("Vous avez perdu. Recomencer?")) {
-			history.go(0);
+		if (gagne == 0) {
+			if (confirm("Vous avez perdu. Recomencer?")) {
+				history.go(0);
+			}
+		} else {
+			if (confirm("Vous avez gagné. Recomencer?")) {
+				history.go(0);
+			}
 		}
 	}
 }
