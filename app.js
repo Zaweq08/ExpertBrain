@@ -67,7 +67,7 @@ function button() {
 
 function affRgl(/*jeu*/) {
 	//if (jeu == "eb") {
-		alert("Les règles sont proches du MasterMind mais les couleurs sont remplacées par des chiffres: (1, 2, 3, 4, 5, 6, 7, 8, 9 et 0), il y a bien 4 'emplacements' et les couleurs signifient: 1Vert => 1chiffre est bien placé, 1Jaune => 1chiffre est existant mais pas à la bonne place(sans compter les biens placés), 1Rouge => 1chiffre n'existant pas dans le code.");
+		alert('Les règles sont proches du MasterMind mais:				les couleurs sont remplacées par des chiffres: (1, 2, 3, 4, 5, 6, 7, 8, 9 et 0),				 il y a bien 4 "emplacements"				les couleurs signifient: 1Vert => 1chiffre est bien placé, 1Jaune => 1chiffre est existant mais pas à la bonne place(sans compter les biens placés), 1Rouge => 1chiffre n\'existant pas dans le code.');
 	//}
 }
 
