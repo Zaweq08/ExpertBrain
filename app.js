@@ -48,6 +48,15 @@ function tester() {
 			alert("Gagné!!! Bravo!!");
 			gagne = 1;
 		}
+		if (gagne == 0) {
+			if (confirm("Vous avez perdu. Recomencer?")) {
+				history.go(0);
+			}
+		} else {
+			if (confirm("Vous avez gagné. Recomencer?")) {
+				history.go(0);
+			}
+		}
 	} else {
 		if (gagne == 0) {
 			if (confirm("Vous avez perdu. Recomencer?")) {
