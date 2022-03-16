@@ -42,13 +42,14 @@ function tester() {
 		//alert(places + " bien placé(s).");
 		//alert(couleurs + " chiffre(s) existant(s). {Hors bien placés.}");
 		//alert(erreurs + " erreurs.");
-		if (tour > 10 && gagne == 0) {
+		if (gagne == 1) {
 			alert("Perdu...");
+			gagne = 1;
 		} else if (places == 4) {
 			alert("Gagné!!! Bravo!!");
-			gagne = 1;
+			gagne = 2;
 		}
-		if (gagne == 0) {
+		if (gagne == 1) {
 			if (confirm("Vous avez perdu. Recomencer?")) {
 				history.go(0);
 			}
@@ -58,11 +59,11 @@ function tester() {
 			}
 		}
 	} else {
-		if (gagne == 0) {
+		if (gagne == 1) {
 			if (confirm("Vous avez perdu. Recomencer?")) {
 				history.go(0);
 			}
-		} else {
+		} else if (gagne == 2) {
 			if (confirm("Vous avez gagné. Recomencer?")) {
 				history.go(0);
 			}
