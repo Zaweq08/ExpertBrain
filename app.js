@@ -25,7 +25,7 @@ function tester() {
 		var erreurs = 0;
 		var couleurs = 0;
 		var places = 0;
-		var imgTitle = "004.png"
+		var imgTitle = "none.png"
 		pDT.innerHTML = propUser[0] + " " + propUser[1] + " " + propUser[2] + " " + propUser[3]
 		//console.log(propUser);
 		for (var i = 0; i < 4; i++) {
@@ -42,7 +42,7 @@ function tester() {
 		//alert(places + " bien placé(s).");
 		//alert(couleurs + " chiffre(s) existant(s). {Hors bien placés.}");
 		//alert(erreurs + " erreurs.");
-		if (gagne == 1) {
+		if (tour >= 10) {
 			alert("Perdu...");
 			gagne = 1;
 		} else if (places == 4) {
@@ -77,7 +77,7 @@ function button() {
 
 function affRgl(/*jeu*/) {
 	//if (jeu == "eb") {
-		alert('Les règles sont proches du MasterMind mais: 						les couleurs sont remplacées par des chiffres: (1, 2, 3, 4, 5, 6, 7, 8, 9 et 0),				 									il y a bien 4 "emplacements"													les couleurs signifient: 1Vert => 1chiffre est bien placé, 1Jaune => 1chiffre est existant mais pas à la bonne place(sans compter les biens placés), 1Rouge => 1chiffre n\'existant pas dans le code.');
+		alert('Les règles sont proches du MasterMind mais: 						les couleurs sont remplacées par les chiffres: (1, 2, 3, 4, 5, 6, 7, 8, 9 et 0),				 									il y a bien 4 "emplacements"													les couleurs signifient: 1Vert => 1chiffre est bien placé, 1Jaune => 1chiffre est existant mais pas à la bonne place(sans compter les biens placés), 1Rouge => 1chiffre n\'existant pas dans le code.');
 	//}
 }
 
