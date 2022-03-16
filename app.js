@@ -53,7 +53,7 @@ function tester() {
 			if (confirm("Vous avez perdu. Recomencer?")) {
 				history.go(0);
 			}
-		} else {
+		} else (gagne == 2) {
 			if (confirm("Vous avez gagné. Recomencer?")) {
 				history.go(0);
 			}
