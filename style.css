@@ -7,17 +7,20 @@ a {
 	color: #111111;
 	background-color: #404040;
 	padding: 5px;
+	border: radius;
 }
 
 #menu {
 	padding: 10px;
 	background-color: #808080;
 	text-align: center;
+	border: radius;
 }
 
 #enTete {
 	align-items: center;
 	text-align: center;
+	border: radius;
 }
 
 h1 {
@@ -25,6 +28,7 @@ h1 {
 	text-align: center;
 	margin-left: 25%;
 	margin-right: 25%;
+	border: radius;
 }
 
 #contenu {
@@ -32,6 +36,7 @@ h1 {
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 10px;
+	border: radius;
 }
 
 #msgError {
